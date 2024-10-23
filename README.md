@@ -1,47 +1,61 @@
 # Customer Demographics and Shopping Behavior Analysis
 
+# Targeting the Untapped Market (18-25 Age Group) with a New Credit Card
+
 ## Project Overview
-This project focuses on analyzing customer data to better understand shopping behaviors, particularly for the age group 18-25. The analysis is conducted in two phases:
 
-- **Phase 1**: Exploratory Data Analysis (EDA) – Uncovering initial insights and patterns in the data.
-- **Phase 2**: Statistical Analysis – Conducting deeper analysis to validate and quantify the patterns observed in Phase 1.
+This project aims to assess the feasibility and impact of launching a new credit card targeted specifically at customers aged 18-25. Using a combination of Exploratory Data Analysis (EDA) and A/B testing, we analyze customer behavior and evaluate the effectiveness of this targeted campaign.
 
-## Dataset
-The dataset consists of customer demographic information and transaction details, including payment methods and shopping categories.
+## Key Features
 
-
-## Phases
-
-### Phase 1: Exploratory Data Analysis (EDA)
-In this phase, we explored the dataset to derive insights into the behavior of customers, focusing on the age group 18-25.
-
-#### Key Findings:
-1. **Customer Base**: Customers aged 18-25 account for ~26% of the total customer base.
-2. **Annual Income**: The average annual income for this group is less than $50,000, suggesting they are generally in the early stages of their careers or education.
-3. **Credit History**: This age group has limited credit history, reflected by lower credit scores and credit limits compared to older age groups.
-4. **Payment Methods**: The use of credit cards is relatively low in this group, which may be due to limited credit access or a preference for other payment methods like debit cards or digital wallets.
-5. **Top Shopping Categories**:
-   - **Electronics**: Popular for gadgets and tech purchases.
-   - **Fashion & Apparel**: Reflects the trend-driven nature of this age group.
-   - **Beauty & Personal Care**: Indicates an interest in self-care products.
-
-Visualizations were created to represent these insights using **Matplotlib** and **Seaborn**.
-
-### Phase 2: Statistical Analysis
-In this phase, we perform a detailed statistical analysis to confirm the trends observed in the EDA and to draw meaningful conclusions. The analysis involves:
-
-- **Hypothesis Testing**: We conduct hypothesis tests to verify assumptions, such as whether the average income of customers aged 18-25 is significantly lower than other age groups.
-  - Null Hypothesis (H₀): There is **no significant difference** in the income of the age group 18-25 compared to others.
-  - Alternative Hypothesis (H₁): There is a **significant difference** in income.
+- **Exploratory Data Analysis (EDA)**: 
+  - Analyzed customer demographics, credit card usage patterns, and product preferences.
+  - Focused on the 18-25 age group, representing ~26% of the customer base.
+  - Identified spending trends, credit limits, and common product categories.
   
-- **Correlation Analysis**: We explore the relationship between different variables, such as income and credit score or payment methods and spending patterns.
-  
-- **Regression Analysis**: We use regression models to predict purchase amounts based on demographics like income, credit score, and age.
+- **A/B Testing**:
+  - Formed control and test groups to evaluate the impact of a new credit card offer on transaction amounts.
+  - Sample size determination based on statistical power and effect size.
+  - Hypothesis testing to determine the effectiveness of the new credit card.
 
-### Tools and Technologies
-- **Python**: Primary language used for the analysis.
-- **Pandas**: For data manipulation, cleaning, and aggregation.
-- **Matplotlib & Seaborn**: For generating insightful data visualizations.
-- **NumPy & SciPy**: For performing statistical tests and mathematical calculations.
-- **Jupyter Notebooks**: For interactive and iterative data exploration.
+## Key Findings from EDA
+
+- The 18-25 age group has a lower average income (< $50k) and limited credit history.
+- Credit card usage is lower compared to other groups, with smaller average transaction amounts.
+- Top spending categories: **Electronics**, **Fashion & Apparel**, and **Beauty & Personal Care**.
+
+## A/B Testing Analysis
+
+- **Hypothesis**: Introducing a new credit card will increase the average transaction amounts for the 18-25 age group compared to a control group.
+- **Sample Size**: Determined to be 100 customers (50 in the test group and 50 in the control group).
+- **Test Duration**: The campaign ran for 2 months, from 09-10-23 to 11-10-23.
+- **Conversion Rate**: ~40% of the test group started using the new credit card.
+
+### Hypothesis Testing
+
+- **Z-score**: 2.7466 (positive, indicating potential success for the new card).
+- **Critical Z-value**: 1.6448 (right-tailed test, 5% significance level).
+- **p-value**: 0.0030 (less than 0.05, leading to rejection of the null hypothesis).
+
+## Conclusion
+
+The A/B testing results provide strong evidence that the new credit card targeted towards the 18-25 age group has a statistically significant impact on increasing average transaction amounts. 
+
+## Next Steps
+
+- Scale the campaign to a larger audience and refine targeting strategies based on insights from this test.
+- Gather customer feedback to further tailor the credit card features.
+- Provide educational resources to encourage responsible credit usage among younger customers.
+
+## Requirements
+
+- **Python Libraries**:
+  - `pandas`
+  - `numpy`
+  - `scipy`
+  - `matplotlib`
+  - `seaborn`
+  - `statsmodels`
+
+
 
