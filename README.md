@@ -1,35 +1,47 @@
-# Nikhilkund-Credit-Card-Launch-Analysis
-
 # Customer Demographics and Shopping Behavior Analysis
 
 ## Project Overview
+This project focuses on analyzing customer data to better understand shopping behaviors, particularly for the age group 18-25. The analysis is conducted in two phases:
 
-This project involves analyzing customer data to understand shopping behaviors, with a focus on the age group 18-25. The project is divided into two phases:
-1. **Phase 1**: Exploratory Data Analysis (EDA)
-2. **Phase 2**: Statistical Analysis
+- **Phase 1**: Exploratory Data Analysis (EDA) – Uncovering initial insights and patterns in the data.
+- **Phase 2**: Statistical Analysis – Conducting deeper analysis to validate and quantify the patterns observed in Phase 1.
 
-## Phase 1: Exploratory Data Analysis (EDA)
+## Dataset
+The dataset consists of customer demographic information and transaction details, including payment methods and shopping categories.
 
-In the first phase, we conducted an exploratory data analysis on the customer data to derive insights into the behavior of customers aged 18-25. Key findings include:
 
-- **Customer Base**: The age group 18-25 accounts for ~26% of the customer base.
-- **Annual Income**: The average annual income of this group is less than 50k.
-- **Credit History**: They have limited credit history, which is reflected in lower credit scores and credit limits.
-- **Payment Methods**: Usage of credit cards as a payment method is relatively low compared to other age groups.
-- **Top Shopping Categories**:
-  1. Electronics
-  2. Fashion & Apparel
-  3. Beauty & Personal Care
+## Phases
 
-## Phase 2: Statistical Analysis
+### Phase 1: Exploratory Data Analysis (EDA)
+In this phase, we explored the dataset to derive insights into the behavior of customers, focusing on the age group 18-25.
 
-In the second phase, we will dive deeper into statistical analysis to validate the patterns and trends observed in Phase 1. This will involve hypothesis testing to accept the Null or recect the null.
+#### Key Findings:
+1. **Customer Base**: Customers aged 18-25 account for ~26% of the total customer base.
+2. **Annual Income**: The average annual income for this group is less than $50,000, suggesting they are generally in the early stages of their careers or education.
+3. **Credit History**: This age group has limited credit history, reflected by lower credit scores and credit limits compared to older age groups.
+4. **Payment Methods**: The use of credit cards is relatively low in this group, which may be due to limited credit access or a preference for other payment methods like debit cards or digital wallets.
+5. **Top Shopping Categories**:
+   - **Electronics**: Popular for gadgets and tech purchases.
+   - **Fashion & Apparel**: Reflects the trend-driven nature of this age group.
+   - **Beauty & Personal Care**: Indicates an interest in self-care products.
 
-## Tools and Technologies
+Visualizations were created to represent these insights using **Matplotlib** and **Seaborn**.
 
-- **Python**: For data cleaning, analysis, and visualization.
-- **Pandas**: For data manipulation.
-- **Matplotlib / Seaborn**: For visualizations.
-- **NumPy / SciPy**: For statistical analysis.
-- **Jupyter Notebooks**: For interactive data exploration.
+### Phase 2: Statistical Analysis
+In this phase, we perform a detailed statistical analysis to confirm the trends observed in the EDA and to draw meaningful conclusions. The analysis involves:
+
+- **Hypothesis Testing**: We conduct hypothesis tests to verify assumptions, such as whether the average income of customers aged 18-25 is significantly lower than other age groups.
+  - Null Hypothesis (H₀): There is **no significant difference** in the income of the age group 18-25 compared to others.
+  - Alternative Hypothesis (H₁): There is a **significant difference** in income.
+  
+- **Correlation Analysis**: We explore the relationship between different variables, such as income and credit score or payment methods and spending patterns.
+  
+- **Regression Analysis**: We use regression models to predict purchase amounts based on demographics like income, credit score, and age.
+
+### Tools and Technologies
+- **Python**: Primary language used for the analysis.
+- **Pandas**: For data manipulation, cleaning, and aggregation.
+- **Matplotlib & Seaborn**: For generating insightful data visualizations.
+- **NumPy & SciPy**: For performing statistical tests and mathematical calculations.
+- **Jupyter Notebooks**: For interactive and iterative data exploration.
 
