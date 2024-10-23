@@ -1,6 +1,4 @@
-# Customer Demographics and Shopping Behavior Analysis
-
-# Targeting the Untapped Market (18-25 Age Group) with a New Credit Card
+# Customer Demographics and Shopping Behavior Analysis - Targeting the Untapped Market (18-25 Age Group) with a New Credit Card
 
 ## Project Overview
 
